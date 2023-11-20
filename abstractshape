@@ -1,0 +1,51 @@
+abstract class Shape
+{
+
+    abstract void numberOfSides();
+}
+
+
+class Rectangle extends Shape
+{
+
+    void numberOfSides()
+    {
+        System.out.println("A rectangle has 4 sides.");
+    }
+}
+
+
+class Triangle extends Shape
+{
+
+    void numberOfSides()
+    {
+        System.out.println("A triangle has 3 sides.");
+    }
+}
+
+
+class Hexagon extends Shape
+{
+
+    void numberOfSides()
+    {
+        System.out.println("A hexagon has 6 sides.");
+    }
+}
+
+public class abstracts
+{
+    public static void main(String[] args)
+    {
+        Shape obj;
+    obj= new Rectangle();
+    obj.numberOfSides();
+    obj= new Triangle();
+    obj.numberOfSides();
+    obj= new Hexagon();
+    obj.numberOfSides();
+ 
+    }
+}
+
